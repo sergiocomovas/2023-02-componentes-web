@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<script src="native-comp/native-comp.js"></script>
+		<script type="module" src="lit-comp/lit-comp.js"></script>
+		<script defer src="alpinejs.js"></script>
+		<title>Como Vas Dev;</title>
+	</head>
+	<body>
+		<style>
+			html,
+			body {
+				height: -100px;
+			}
+
+			body {
+				display: grid;
+				place-content: center;
+				gap: 20px;
+				font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+			}
+		</style>
+
+		<h1>
+			Web Components
+		</h1>
+
+		<webcom-nativo
+			mensaje="Esto es un componente Web Nativo 🧡"
+		></webcom-nativo>
+
+		<webcom-lit nombre="Componente Lint"></webcom-lit>
+
+		<div
+			x-data="{ personas: [] }"
+			x-init="personas = await (await fetch('/data/personas.json')).json()"
+		>
+			<template x-for="persona in personas">
+				<div>
+					<webcom-lit
+						:nombre="`${persona.nombre} ${persona.apellido}`"
+					></webcom-lit>
+				</div>
+			</template>
+		</div>
+	</body>
+</html>

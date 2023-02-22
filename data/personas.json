@@ -1,0 +1,46 @@
+[
+	{
+		"nombre": "Juan",
+		"apellido": "Pérez",
+		"edad": 30,
+		"dirección": {
+			"calle": "Calle Falsa",
+			"número": "123",
+			"ciudad": "Ciudad Ficticia"
+		},
+		"intereses": ["Programación", "Viajes", "Música"]
+	},
+	{
+		"nombre": "María",
+		"apellido": "González",
+		"edad": 25,
+		"dirección": {
+			"calle": "Calle Principal",
+			"número": "456",
+			"ciudad": "Ciudad Real"
+		},
+		"intereses": ["Cocina", "Deportes", "Lectura"]
+	},
+	{
+		"nombre": "Pedro",
+		"apellido": "Sánchez",
+		"edad": 42,
+		"dirección": {
+			"calle": "Avenida del Sol",
+			"número": "789",
+			"ciudad": "Madrid"
+		},
+		"intereses": ["Viajes", "Gastronomía", "Fútbol"]
+	},
+	{
+		"nombre": "Ana",
+		"apellido": "López",
+		"edad": 28,
+		"dirección": {
+			"calle": "Calle Mayor",
+			"número": "1011",
+			"ciudad": "Barcelona"
+		},
+		"intereses": ["Arte", "Música", "Deportes"]
+	}
+]
